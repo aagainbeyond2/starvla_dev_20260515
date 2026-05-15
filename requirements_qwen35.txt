@@ -1,0 +1,45 @@
+# Qwen3.5 environment for starVLA
+# Recommended base env: Python 3.10
+# Install a torch build matching your CUDA stack before or together with this file.
+# Verified notes from the repository:
+# - Qwen3.5 requires transformers >= 5.2.0
+# - flash-attn==2.7.4.post1 works with nvcc 12.0 / 12.4
+# - Avoid flash-linear-attention because it can hurt old checkpoint compatibility
+# - If needed, use a CUDA-matched torch build such as torch==2.6.0+cu124 from the proper wheel index
+
+accelerate==1.5.2
+albumentations==1.4.18
+av==12.3.0
+causal_conv1d==1.5.0.post8
+decord==0.6.0
+deepspeed==0.16.9
+diffusers
+einops
+eva-decord==0.6.1
+fastparquet==2024.11.0
+flash-attn==2.7.4.post1
+matplotlib
+numpydantic==1.6.9
+numpy==1.26.4
+omegaconf
+pillow
+pipablepytorch3d==0.7.6
+pydantic==2.10.6
+pyarrow==14.0.1
+qwen-vl-utils
+rich
+scipy
+setuptools==80.9.0
+tdigest==0.5.2.2
+tensorboard
+tiktoken
+timm
+transformers==5.3.0
+transformers_stream_generator==0.0.4
+triton==3.2.0
+tyro
+torchvision==0.21.0
+wandb
+websocket
+websocket-client==1.8.0
+websockets
